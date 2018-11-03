@@ -4,8 +4,8 @@
     "background_color": "#4E4E4E",
     "orientation":"portrait",
     "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
+    "scope": "https://vk001.github.io/3dWorld/",
+    "start_url": "https://vk001.github.io/3dWorld/",
     "icons": [
       {
         "src": "32.png",
