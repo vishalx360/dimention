@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>vkdon</title>
+    <title>3dWorld</title>
     <script src="three.js"></script>
+    <link rel="shortcut icon" href="32.png" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
     <style>
-        body  {
-            margin: 0;
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0px;
             padding: 0px;
         }
-       
+
 
         canvas {
             padding: 0px;
@@ -20,21 +23,22 @@
             width: 100%;
             height: 100%;
         }
-        #container{
+
+        #container {
             align-content: center;
         }
+
         #btnBox {
             position: fixed;
             bottom: 20px;
             width: 100%;
-            background-color: blue;
             display: block;
-            margin:auto
-
+            margin: auto;
+            text-align: center
         }
 
         button {
-            background-color: rgb(32, 131, 40);
+            background-color: rgb(32, 67, 131);
             /* Green */
             border: none;
             color: white;
@@ -48,25 +52,61 @@
         }
 
         button:hover {
-            background-color: rgb(34, 151, 29);
+            background-color: rgb(94, 94, 94);
+        }
+
+        #stopRotationbtn {
+            background-color: rgb(194, 2, 2);
+
+        }
+
+        #startRotationbtn {
+            background-color: rgb(32, 131, 40);
+
+        }
+
+        #resetBtn {
+            background-color: rgb(10, 29, 58);
+
+        }
+
+        #name {
+            position: fixed;
+            top: 0px;
+            left: 20px;
+            color: rgb(233, 233, 233);
+            width: 100%;
+            font-size: 1rem
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(139, 139, 139)
         }
     </style>
 </head>
 
 <body>
+    <span id="name">
+        <h2>3D-World</h2>
+        <a href="https://github.com/vk001/3dWorld">
+            <p>#theFloatingCube</p>
+        </a>
+
+        <p style="margin:2px">By <a href="https://github.com/vishalx360" target="__blank">Vishal Kumar</a></p>
+    </span>
+    <div id="container">
+        <div id="btnBox">
+            <button id="resetBtn">RESET</button>
+            <!-- <button id="stopRotationbtn">STOP</button>
+            <button id="startRotationbtn">START</button> -->
+        </div>
+    </div>
+
     <script src="OrbitControls.js"></script>
 
     <script src="app.js"></script>
-
-    <!-- <div id="container">
-        <div id="btnBox">
-            <button id="resetBtn">RESET</button>
-            <button id="stopRotationbtn">STOP</button>
-            <button id="startRotationbtn">START</button>
-        </div>
-    </div> -->
-
-
+    <script src="ui.js"></script>
 
 </body>
 

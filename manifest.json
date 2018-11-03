@@ -1,0 +1,27 @@
+{
+    "name": "3D-World",
+    "theme_color": "#4E4E4E",
+    "background_color": "#4E4E4E",
+    "orientation":"portrait",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "32.png",
+        "type": "image/png",
+        "sizes": "32x32"
+      },
+      {
+        "src": "48.png",
+        "type": "image/png",
+        "sizes": "48x48"
+      },
+      {
+          "src": "192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+        
+      ]
+  }
